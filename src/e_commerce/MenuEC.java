@@ -38,13 +38,15 @@ public class MenuEC {
 			try {
 				opcao = leia.nextInt();
 			} catch (InputMismatchException e) {
-				System.out.println("\nDigite um numero dentro das opções!!");
+				
+				System.out.println(Cores.TEXT_BLACK_BOLD + Cores.ANSI_WHITE_BACKGROUND +"\nDigite um numero dentro das opções!!\n");
 				leia.nextLine();
-				opcao=0;
+				opcao=-1;
 			}
 			
-			if (opcao == 9) {
-				System.out.println(Cores.TEXT_BLACK_BOLD + "\nObrigado por comprar com a gente!");
+			if (opcao == 0) {
+				
+				System.out.println(Cores.TEXT_BLACK_BOLD + Cores.ANSI_WHITE_BACKGROUND + "\nObrigado por comprar com a gente!");
 				leia.close();
 				System.exit(0);
 			}
