@@ -6,6 +6,6 @@ public interface EC_Repository {
 
 	public void Adicionar(Produto produto);
 	public void listarProdutos();
-	public void Editar(Produto produto);
-	public void Excluir(Produto produto);
+	public void Editar(int codigo, String novoProduto, float novoPreco);
+	public void Excluir(int codigo);
 }
