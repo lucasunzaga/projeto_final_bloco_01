@@ -12,7 +12,7 @@ public class MenuEC {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner (System.in);
 		
-		int opcao;
+		int opcao, codigo;
 		String usuario, produto;
 		float preco;
 		
